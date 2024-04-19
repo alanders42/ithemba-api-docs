@@ -62,6 +62,7 @@ Success Response
 ```
 Validation Error Response (400):
 ```
+{"error": "Failed to send multicast message"}
 {"error": "User ID or Unit ID is required."}
 {"error": "Message body and title are required."}
 {"error: No user or unit ids provided"}
