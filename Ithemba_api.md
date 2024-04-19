@@ -52,9 +52,9 @@ message_type_fk      | Type of message: [0] Normal message, [1] Automated messag
 message_subject      | Subject of the message (can be same as title).
 body_html            | HTML body of the content you're sending.
 time_limit           | Time for sending the message (optional).
-resend               | Flag for resending Firebase notifications.
+resend               | Flag for resending Firebase notifications (optional).
 unit_list            | List of units to which the message will be sent. Example: [{"unit_number": "the_unit_number"}].
-sid                  | SID of the message if you're sending a resend.
+sid                  | SID of the message if you're sending a resend (optional).
 ```
 Success Response
 ```
