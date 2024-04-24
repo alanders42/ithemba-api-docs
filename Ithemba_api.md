@@ -20,7 +20,7 @@ Please note the trailing slashes on the URLs.
 Health check to see whether the API is online and authentication succeeds.
 Request:
 ```
-GET /health-check/
+GET /health-check
 ```
 Response:
 ```
@@ -30,7 +30,7 @@ Response:
 
 Request
 ```
-POST /send_message/
+POST /send_message
 {
     "message": "str",
     "title": "str",
