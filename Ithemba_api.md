@@ -1,6 +1,6 @@
 # External api
 ## Meta
-This document has been updated at 2024-04-24
+This document has been updated at 2024-05-03
 ## Contact
 Please contact shane.vanniekerk@drakkentech.co.za
 ## Authentication
@@ -50,6 +50,7 @@ title                | Brief description or subject of the message.
 message_type_fk      | Type of message: [0] Normal message, [1] Automated message, [2] Scheduled message.
 message_subject      | Subject of the message (can be same as title).
 body_html            | HTML body of the content you're sending.
+time_limit           | How long should I wait between sending messages to a user? 0 will be instant. 
 resend               | Flag for resending Firebase notifications (optional).
 unit_list            | List of units to which the message will be sent. Example: [{"unit_number": "the_unit_number"}].
 sid                  | SID of the message if you're sending a resend (optional).
