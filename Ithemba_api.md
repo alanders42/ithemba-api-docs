@@ -13,7 +13,7 @@ The token is configured in the production database table name bearer_token sid 1
 The API expects data to be posted in JSON format and will reply with JSON data.
 The `Content-Type: application/json` header should be set on requests.
 ## Location
-The API is available at https://ithemba.drakkentech.co.za/send_message/
+The API is available at https://ithemba.drakkentech.co.za/api
 ## Endpoints
 Please note the trailing slashes on the URLs.
 ### Health Check
