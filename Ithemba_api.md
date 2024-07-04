@@ -38,7 +38,8 @@ POST /send_message
     "message_subject": "str",
     "body_html": "str",
     "resend": "Optional[int]",
-    "unit_list": "List",
+    "unit_list": Optional["List"],
+    "mda_user_id": Optional["List"],
     "sid": "Optional[int]"
   }
 ```
@@ -53,6 +54,7 @@ body_html            | HTML body of the content you're sending.
 time_limit           | How long should I wait between sending messages to a user? 0 will be instant. 
 resend               | Flag for resending Firebase notifications (optional).
 unit_list            | List of units to which the message will be sent. Example: [{"unit_number": "the_unit_number"}].
+mda_user_id          | List of units to which the message will be sent. Example: [{"user_id": "user_id"}].
 sid                  | SID of the message if you're sending a resend (optional).
 ```
 Success Response
@@ -61,9 +63,10 @@ Success Response
 ```
 Validation Error Response (400):
 ```
-{"error": "User ID or Unit ID is required."}
-{"error": "Message body and title are required."}
-{"error: No user or unit ids provided"}
+{"error": "requires only one field user id or unit id or mda user id"}
+{"error": "No users found for the specified unit"}
+{"error": "Error: Could not find mda user"}
+{"error": "No user_id_list, unit_list or mda_user_id provided"}
 {"error": "Bearer Token does not exist"}
 ```
 
