@@ -1,6 +1,6 @@
 # External api
 ## Meta
-This document has been updated at 2024-05-03
+This document has been updated at 2024-07-05
 ## Contact
 Please contact shane.vanniekerk@drakkentech.co.za
 ## Authentication
@@ -48,7 +48,7 @@ Field Name           | Description
 ---------------------|--------------------------------------------------------------------
 message              | Content of the message you're sending.
 title                | Brief description or subject of the message.
-message_type_fk      | Type of message: [0] Normal message, [1] Automated message, [2] Scheduled message.
+message_type_fk      | Type of message: [1] Normal message, [2] Automated message, [3] Scheduled message.
 message_subject      | Subject of the message (can be same as title).
 body_html            | HTML body of the content you're sending.
 time_limit           | How long should I wait between sending messages to a user? 0 will be instant. 
@@ -61,6 +61,8 @@ Success Response
 ```
 {"messages": "sent successfully"}
 ```
+Note only one option must be present in the body (unit_list or mda_user_id)
+
 Validation Error Response (400):
 ```
 {"error": "requires only one field user id or unit id or mda user id"}
