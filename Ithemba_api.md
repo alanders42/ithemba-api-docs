@@ -41,6 +41,7 @@ POST /send_message
     "unit_list": Optional["List"],
     "mda_user_id": Optional["List"],
     "sid": "Optional[int]"
+    "sent_from": "Optional[int]"
   }
 ```
 ```
