@@ -56,6 +56,7 @@ resend               | Flag for resending Firebase notifications (optional).
 unit_list            | List of units to which the message will be sent. Example: [{"unit_number": "the_unit_number"}].
 mda_user_id          | List of units to which the message will be sent. Example: [{"user_id": "user_id"}].
 sid                  | SID of the message if you're sending a resend (optional).
+sent_from            | default value is 1, but can be set to any integer
 ```
 Success Response
 ```
